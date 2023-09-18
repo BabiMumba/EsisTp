@@ -10,6 +10,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.ProgressBar
 import cd.babi.esis_tp.R
+import com.github.chrisbanes.photoview.PhotoView
 import java.io.BufferedInputStream
 import java.io.File
 import java.io.FileOutputStream
@@ -18,14 +19,15 @@ import java.net.HttpURLConnection
 import java.net.URL
 
 class DetailHoraireActivity : AppCompatActivity() {
-    private lateinit var pdfImageView: ImageView
+    private lateinit var pdfImageView: PhotoView
     private lateinit var progressBar: ProgressBar
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_horaire)
         pdfImageView = findViewById(R.id.pdfImageView)
         progressBar = findViewById(R.id.progressBar)
-        val pdfUrl = "https://www.esisalama.com/assets/upload/horaire/pdf/HORAIRE%20L2.pdf" // Remplacez par votre lien PDF réel
+        val promo = intent.getStringExtra("promo")
+        val pdfUrl = "https://www.esisalama.com/assets/upload/horaire/pdf/HORAIRE%20$promo.pdf" // Remplacez par votre lien PDF réel
         val downloadPdfTask = DownloadPdfTask()
         downloadPdfTask.execute(pdfUrl)
     }

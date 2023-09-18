@@ -21,9 +21,8 @@ class PromAdapter(private val promList: List<PromModel>) : RecyclerView.Adapter<
         val prom = promList[position]
         holder.bind(prom)
         holder.itemView.setOnClickListener {
-            //startActivity(Intent(this, HoraireActivity::class.java))
             val intent = Intent(holder.itemView.context, DetailHoraireActivity::class.java)
-            intent.putExtra("filiere", prom.promotion)
+            intent.putExtra("promo", prom.promotion)
             holder.itemView.context.startActivity(intent)
         }
     }

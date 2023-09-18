@@ -24,16 +24,16 @@ class HoraireFragment : Fragment() {
         val filieres = mutableListOf<PromModel>(
             PromModel("L1", "L1"),
             PromModel("L2", "L2"),
-            PromModel("L3_Gl", "L3"),
-            PromModel("L3_MSI", "M1"),
-            PromModel("L3_AS", "M2"),
-            PromModel("L3_DESIGN", "M2"),
-            PromModel("L3_TLC", "M2"),
-            PromModel("L4_Gl", "L3"),
-            PromModel("L4_MSI", "M1"),
-            PromModel("L4_AS", "M2"),
-            PromModel("L4_DESIGN", "M2"),
-            PromModel("L4_TLC", "M2"),
+            PromModel("L3-GL", "L3"),
+            PromModel("L3-MSI", "M1"),
+            PromModel("L3-AS", "M2"),
+            PromModel("L3-DSG", "M2"),
+            PromModel("L3-TLC", "M2"),
+            PromModel("L4-GL", "L3"),
+            PromModel("L4-MSI", "M1"),
+            PromModel("L4-AS", "M2"),
+            PromModel("L4-DSG", "M2"),
+            PromModel("L4-TLC", "M2"),
         )
 
         recyclerView = view.findViewById(R.id.recy_horaire)
