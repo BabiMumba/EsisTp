@@ -1,10 +1,13 @@
 package cd.babi.esis_tp.Horaire
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
+import cd.babi.esis_tp.Actualite.DetaillActivity
 import cd.babi.esis_tp.R
 
 class PromAdapter(private val promList: List<PromModel>) : RecyclerView.Adapter<PromAdapter.ViewHolder>() {
@@ -17,6 +20,12 @@ class PromAdapter(private val promList: List<PromModel>) : RecyclerView.Adapter<
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val prom = promList[position]
         holder.bind(prom)
+        holder.itemView.setOnClickListener {
+            //startActivity(Intent(this, HoraireActivity::class.java))
+            val intent = Intent(holder.itemView.context, DetailHoraireActivity::class.java)
+            intent.putExtra("filiere", prom.promotion)
+            holder.itemView.context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int {
