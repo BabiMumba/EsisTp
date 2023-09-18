@@ -3,17 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Actualite.ActualiteFragment">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
-        <TextView
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_alignParentTop="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="Horaire"
-            android:gravity="center"
+            android:id="@+id/recy_horaire"
+            android:layout_marginTop="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="vertical"
             />
     </RelativeLayout>
 
