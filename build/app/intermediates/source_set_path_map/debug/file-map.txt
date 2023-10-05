@@ -1,0 +1,12 @@
+cd.babitech.asynconf.app-jetified-window-1.0.0-beta04-0 C:\Users\Babi Mumba\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\res
+cd.babitech.asynconf.app-jetified-annotation-experimental-1.1.0-1 C:\Users\Babi Mumba\.gradle\caches\transforms-3\6c0c163cc77ae6c91f9f7dfcd179c29c\transformed\jetified-annotation-experimental-1.1.0\res
+cd.babitech.asynconf.app-core-1.6.0-2 C:\Users\Babi Mumba\.gradle\caches\transforms-3\7e9df2ac2213a6bd3cef0f2f27870d79\transformed\core-1.6.0\res
+cd.babitech.asynconf.app-jetified-window-java-1.0.0-beta04-3 C:\Users\Babi Mumba\.gradle\caches\transforms-3\ae81e06d24c799147c26814497a2a305\transformed\jetified-window-java-1.0.0-beta04\res
+cd.babitech.asynconf.app-debug-4 D:\Android_app\asynconf\android\app\src\debug\res
+cd.babitech.asynconf.app-main-5 D:\Android_app\asynconf\android\app\src\main\res
+cd.babitech.asynconf.app-pngs-6 D:\Android_app\asynconf\build\app\generated\res\pngs\debug
+cd.babitech.asynconf.app-resValues-7 D:\Android_app\asynconf\build\app\generated\res\resValues\debug
+cd.babitech.asynconf.app-rs-8 D:\Android_app\asynconf\build\app\generated\res\rs\debug
+cd.babitech.asynconf.app-mergeDebugResources-9 D:\Android_app\asynconf\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
+cd.babitech.asynconf.app-mergeDebugResources-10 D:\Android_app\asynconf\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+cd.babitech.asynconf.app-merged_res-11 D:\Android_app\asynconf\build\app\intermediates\merged_res\debug
